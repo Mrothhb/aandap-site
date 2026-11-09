@@ -649,3 +649,13 @@ h2, h3 { text-wrap: balance; }
 .way .price { margin-top: auto; }
 .way .b > p.fineprint:first-child { margin: 0 0 var(--s-3); }
 @media (max-width: 720px) { #three-steps .process { grid-template-columns: 1fr; } }
+
+/* aandap.com prices Auto-pilot only; hands-on First Class points to appraisalpartners.net. */
+.ways--one { grid-template-columns: minmax(0, 1fr); }
+.ways--one .way.self .checks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--gutter); }
+.way-pointer { scroll-margin-top: var(--s-6); padding: var(--s-4) var(--s-5); border: 1px solid var(--line); border-left: 4px solid var(--first-class-gold); border-radius: var(--r-2); background: var(--card); }
+.way-pointer p { margin: 0; font-size: 17px; color: var(--ink); text-wrap: pretty; }
+.way-pointer strong { color: color-mix(in srgb, var(--first-class-gold) 70%, #000); }
+.way-pointer .dot { color: var(--ink-2); margin: 0 var(--s-1); }
+.way-pointer a { font-weight: 600; white-space: nowrap; }
+@media (max-width: 720px) { .ways--one .way.self .checks { grid-template-columns: 1fr; } }
